@@ -8,9 +8,10 @@
 
 body {
   display: grid;
-  background: #aaa;
+  background: #eee;
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
+
   grid-template-columns: minmax(50px, auto);
   grid-template-rows: 20vh 75vh 5vh;
   grid-template-areas:
@@ -21,10 +22,22 @@ body {
 
 .box {
   border: 1px solid #777;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
+  display: flex;
   grid-area: hd;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1 {
+  color: #777;
+}
+header > h2 {
+  color: #888;
 }
 
 sidebar {
