@@ -3,23 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RomLuc's Personal Blog Website</title>
+    <title>RomLuc's Personal Travel Blog</title>
     <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/7e77b9f671.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="box">
       <h1>RomLuc's Blog</h1>
       <h2>
-        Lorem ipsum dolor sit amet.
+        Personal. Travel. Blog.
       </h2>
+      <div class="search-box">
+        <input
+          type="text"
+          class="search-term"
+          placeholder="Search for posts here..."
+        />
+        <button type="submit" class="search-button">
+          <i class="fal fa-search"></i>
+        </button>
+      </div>
     </header>
 
     <sidebar class="box">
-      <div class="menu-topic box">Post 1</div>
-      <div class="menu-topic box">Post 2</div>
-      <div class="menu-topic box">Post 3</div>
+      <ul>
+        <li class="menu-item">Post 1</li>
+        <ul>
+          <li class="submenu-item">asdf1</li>
+        </ul>
+        <li class="menu-item">Post 2</li>
+        <li class="menu-item">Post 3</li>
+      </ul>
     </sidebar>
-    <section class="box">Content</section>
-    <footer class="box">Footer</footer>
+    <section class="content">
+      <div class="card">
+        <a href="post.html">Check it out!</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel
+          enim ac nunc egestas tristique quis non sapien. Morbi a odio nisl.
+          Maecenas eu risus id libero pretium bibendum. Quisque egestas
+          vulputate turpis id volutpat. Sed eget enim nec elit pellentesque
+          congue eleifend a quam.
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Duis iaculis quis sapien consectetur egestas. Morbi viverra, leo vitae
+          gravida rutrum, lacus purus dignissim elit, eu pulvinar elit nunc
+          convallis ipsum. Donec pellentesque elementum nibh quis viverra.
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Mauris consectetur, diam a ullamcorper accumsan, elit sapien pretium
+          nisl, non mollis dui purus eget diam. Nam nulla odio, laoreet eget
+          risus quis, tempor rhoncus ante. Curabitur vel ornare justo.
+        </p>
+      </div>
+      <div class="card">
+        <a href="post.html">Blog post 1</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel
+          enim ac nunc egestas tristique quis non sapien. Morbi a odio nisl.
+          Maecenas eu risus id libero pretium bibendum. Quisque egestas
+          vulputate turpis id volutpat. Sed eget enim nec elit pellentesque
+          congue eleifend a quam.
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Duis iaculis quis sapien consectetur egestas. Morbi viverra, leo vitae
+          gravida rutrum, lacus purus dignissim elit, eu pulvinar elit nunc
+          convallis ipsum. Donec pellentesque elementum nibh quis viverra.
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Mauris consectetur, diam a ullamcorper accumsan, elit sapien pretium
+          nisl, non mollis dui purus eget diam. Nam nulla odio, laoreet eget
+          risus quis, tempor rhoncus ante. Curabitur vel ornare justo.
+        </p>
+      </div>
+    </section>
+    <footer class="box">made by RomLuc - 2020</footer>
   </body>
 </html>
