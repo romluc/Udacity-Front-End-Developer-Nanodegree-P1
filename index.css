@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
-:root {
-  --main-bg-color: #777;
-  --main-card-color: #00b2b2;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 * {
   margin: 0;
@@ -15,10 +11,11 @@ body {
   display: grid;
   background: #fff;
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 
   grid-template-columns: minmax(200px, auto);
-  grid-template-rows: 25vh 70vh 5vh;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 
   grid-template-areas:
     'hd hd hd'
@@ -31,6 +28,7 @@ header {
   grid-area: hd;
   justify-content: center;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header > h1 {
@@ -46,12 +44,19 @@ header > h2 {
 
 sidebar {
   grid-area: sb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 0.5rem;
   font-size: 1.2rem;
 }
 
 section {
   grid-area: ct;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-box {
@@ -59,7 +64,7 @@ section {
   border-radius: 4px;
   align-self: flex-end;
   padding-right: 4rem;
-  margin-right: 4rem;
+  margin: 0 0 1rem 1rem;
 }
 
 .search-term {
@@ -112,20 +117,46 @@ section {
   padding-left: 1rem;
 }
 
-.submenu-item:hover {
-  background-color: #00b2b2;
-  color: #fff;
+.social-media {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
-.content {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.content-header {
+  color: #777;
+  font-size: 1.4rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+.fa-dog {
+  font-size: 4.5rem;
+  color: #333;
+}
+
+.fa-drum {
+  font-size: 4.5rem;
+  color: #333;
+}
+
+.fa-plane-alt {
+  font-size: 4.5rem;
+  color: #333;
+}
+
+.fa-futbol {
+  font-size: 4.5rem;
+  color: #333;
 }
 
 .card {
-  background: #00b2b2;
-  border: 1px solid #00b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c0c0c0;
   border-radius: 4px;
   font-size: 0.8rem;
   padding: 1rem;
@@ -139,7 +170,7 @@ section {
 }
 
 .card > p {
-  color: #fff;
+  color: #008282;
   margin-top: 0.5rem;
 }
 
@@ -193,6 +224,14 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
+  }
+
+  .content-header {
+    font-size: 1.2rem;
+  }
+
+  .card > p {
+    margin-right: 0.5rem;
   }
 }
 
