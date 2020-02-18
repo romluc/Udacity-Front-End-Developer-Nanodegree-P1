@@ -270,18 +270,15 @@ section {
   color: #222;
 }
 
-@media (max-width: 320px) {
-}
-
 @media (max-width: 901px) {
   body {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(200px, auto);
+    grid-template-rows: repeat(minmax(200px, auto));
 
     grid-template-areas:
       'hd '
-      'ct '
       'sb'
+      'ct '
       'ft ';
 
     align-items: center;
