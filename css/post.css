@@ -223,6 +223,7 @@ section {
   width: 50vw;
   justify-content: flex-start;
   align-items: flex-start;
+  font-weight: bold;
 }
 
 .headers > .subheaders {
