@@ -5,6 +5,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f2f2f2;
 }
 
 .content-header {
@@ -54,10 +55,11 @@ section {
   box-shadow: 0 0 4px rgba(0, 55, 55, 0.4);
   transition: transform 0.3s;
   overflow: hidden;
+  width: 100%;
 }
 
 .img1 {
-  max-width: 20vw;
+  max-width: 50%;
   grid-column: 1/2;
   grid-row: 1/3;
 }
@@ -68,7 +70,7 @@ section {
 }
 
 .img2 {
-  max-width: 8vw;
+  max-width: 50%;
   grid-column: 2/2;
   grid-row: 1/2;
 }
@@ -79,7 +81,7 @@ section {
 }
 
 .img3 {
-  max-width: 8vw;
+  max-width: 50%;
   grid-column: 2/2;
   grid-row: 2/3;
 }
@@ -103,7 +105,6 @@ section {
 
 .card:hover {
   transform: scale(1.01);
-  cursor: pointer;
 }
 
 .card > p {
@@ -114,6 +115,7 @@ section {
 .btn-card {
   width: 80px;
   height: 40px;
+  cursor: pointer;
   border-radius: 4px;
   background-color: #035ab1;
   box-shadow: 0 2px 4px #777;
@@ -122,5 +124,9 @@ section {
 .btn-card > a {
   text-decoration: none;
   color: #fff;
+}
+
+.btn-card:hover {
+  opacity: 0.9;
 }
 /* End of Content section */
